@@ -2,7 +2,7 @@
 <manifest>
   <remote fetch="https://android.googlesource.com/" name="aosp" review="https://android.googlesource.com/"/>
   <remote fetch="https://github.com/khadas/" name="khadas"/>
-  <remote fetch="https://github.com/khadas/" name="minstrelsy"/>
+  <remote fetch="https://github.com/minstrelsy/" name="minstrelsy"/>
   <default remote="khadas" revision="refs/tags/Vims-Pie-V210128" sync-c="true" sync-j="4"/>
 
   <!-- vim3 repos -->
