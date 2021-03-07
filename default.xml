@@ -9,10 +9,10 @@
   <include name="vim3.xml" />
 
   <remove-project name="android_frameworks_base"/>
-  <project name="khadas_android_frameworks_base" path="frameworks/base" revision="master" remote="minstrelsy" />
+  <project name="khadas_android_frameworks_base" path="frameworks/base" remote="minstrelsy" revision="master" />
 
   <!-- Vim3 build script -->
-  <project name="vim3-build-script" path="build_script" revision="master" >
+  <project name="vim3-build-script" path="build_script" remote="minstrelsy" revision="master" >
     <copyfile dest="build-vim3-pie.sh" src="build-vim3-pie.sh" />
     <copyfile dest="burn-vim3-pie.sh" src="burn-vim3-pie.sh" />
   </project>
