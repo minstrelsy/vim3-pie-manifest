@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://android.googlesource.com/" name="aosp" review="https://android.googlesource.com/"/>
+  <remote fetch="https://github.com/khadas/" name="khadas"/>
+  <remote fetch="https://github.com/khadas/" name="minstrelsy"/>
+  <default remote="khadas" revision="refs/tags/Vims-Pie-V210128" sync-c="true" sync-j="4"/>
+
+  <!-- vim3 repos -->
+  <include name="vim3.xml" />
+
+  <remove-project name="android_frameworks_base"/>
+  <project name="khadas_android_frameworks_base" path="frameworks/base" revision="master" remote="minstrelsy" />
+
+  <!-- Vim3 build script -->
+  <project name="vim3-build-script" path="build_script" revision="master" >
+    <copyfile dest="build-vim3-pie.sh" src="build-vim3-pie.sh" />
+    <copyfile dest="burn-vim3-pie.sh" src="burn-vim3-pie.sh" />
+  </project>
+
+</manifest>
