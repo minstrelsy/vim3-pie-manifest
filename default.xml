@@ -11,10 +11,16 @@
   <remove-project name="android_frameworks_base"/>
   <project name="khadas_android_frameworks_base" path="frameworks/base" remote="minstrelsy" revision="master" />
 
+  <remove-project name="android_device_khadas"/>
+  <project name="android_device_khadas" path="device/khadas" remote="minstrelsy" revision="master" />
+
   <!-- Vim3 build script -->
   <project name="vim3-build-script" path="build_script" remote="minstrelsy" revision="master" >
     <copyfile dest="build-vim3-pie.sh" src="build-vim3-pie.sh" />
     <copyfile dest="burn-vim3-pie.sh" src="burn-vim3-pie.sh" />
   </project>
+
+  <project name="VimCameraService" path="vendor/kvim3/VimCameraService" remote="minstrelsy" revision="master" />
+  <project name="VimRestServer" path="vendor/kvim3/VimRestServer" remote="minstrelsy" revision="master" />
 
 </manifest>
